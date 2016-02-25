@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project( equalizing_histograms )
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable( equalizing_histograms equalizing_histograms.cpp )
+target_link_libraries( equalizing_histograms ${OpenCV_LIBS} )
